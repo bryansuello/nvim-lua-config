@@ -10,10 +10,12 @@ local diagnostics = null_ls.builtins.diagnostics
 
 null_ls.setup({
   debug = false,
-  sources = {
+  sources = { --check :NullLsInfo on a language to see what lsp you can use
     formatting.prettier.with({ extra_args = { "--single-quote", "--jsx-single-quote" } }),
     --formatting.black.with({ extra_args = { "--fast" } }),
-    formatting.stylua,
+    --formatting.stylua,
     diagnostics.eslint,
+    diagnostics.alex, --for mdown
+    diagnostics.tidy,
   },
 })
