@@ -65,7 +65,7 @@ end
 lualine.setup({
   options = {
     icons_enabled = true,
-    theme = "gruvbox_dark",
+    theme = "iceberg_dark", --other options: material, gruvbox-material, gruvbox_dark, nightfly, nord, onedark
     component_separators = { left = "", right = "" },
     section_separators = { left = "", right = "" },
     disabled_filetypes = { "alpha", "dashboard", "NvimTree", "Outline" },

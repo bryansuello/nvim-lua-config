@@ -93,7 +93,9 @@ return packer.startup(function(use)
 
   -- ur own
   use({ "ellisonleao/gruvbox.nvim" }) --gruvbox
+
   use({ "aca/emmet-ls" })
+
   use({ "norcalli/nvim-colorizer.lua" }) --css colorizer
   require 'colorizer'.setup {
     '*'; -- Highlight all files, but customize some others.
