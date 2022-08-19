@@ -91,7 +91,7 @@ return packer.startup(function(use)
   -- Git
   use({ "lewis6991/gitsigns.nvim", commit = "c18e016864c92ecf9775abea1baaa161c28082c3" })
 
-  -- ur own
+  -- own plugs
   use({ "ellisonleao/gruvbox.nvim" }) --gruvbox
 
   use({ "aca/emmet-ls" })
@@ -102,7 +102,17 @@ return packer.startup(function(use)
     css = { rgb_fn = true; }; -- Enable parsing rgb(...) functions in css.
     html = { names = true; } -- Disable parsing "names" like Blue or Gray
   }
-  -- ur own end
+
+  use { --easymotion for lua
+    'phaazon/hop.nvim',
+    branch = 'v2', -- optional but strongly recommended
+    config = function()
+      -- you can configure Hop the way you like here; see :h hop-config
+      require 'hop'.setup { keys = 'etovxqpdygfblzhckisuran' }
+    end
+  }
+
+  -- own plugs end
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

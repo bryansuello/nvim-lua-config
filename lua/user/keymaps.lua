@@ -40,7 +40,7 @@ keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
 keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 
 -- Insert --
--- Press kj fast to exit insert mode 
+-- Press kj fast to exit insert mode
 keymap("i", "kj", "<ESC>", opts)
 
 -- Visual --
@@ -67,4 +67,15 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 -- keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
 -- keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 
--- Commnts --- gcc single line, gc multiline
+-- Commnts
+--- gcc single line, gc multiline
+
+-- Hop
+-- Search after cursor
+vim.api.nvim_set_keymap('', '-',
+  "<cmd>lua require'hop'.hint_char1({ direction = require'hop.hint'.HintDirection.AFTER_CURSOR, current_line_only = true })<cr>"
+  , {})
+-- Seach before cursor
+vim.api.nvim_set_keymap('', '=',
+  "<cmd>lua require'hop'.hint_char1({ direction = require'hop.hint'.HintDirection.BEFORE_CURSOR, current_line_only = true })<cr>"
+  , {})
