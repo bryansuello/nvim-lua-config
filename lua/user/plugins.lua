@@ -112,6 +112,15 @@ return packer.startup(function(use)
     end
   }
 
+  use {
+    'lukas-reineke/virt-column.nvim',
+    setup = function()
+      vim.opt.colorcolumn = '80'
+      vim.cmd [[highlight clear ColorColumn]]
+      require('virt-column').setup()
+    end
+  }
+
   -- own plugs end
 
   -- Automatically set up your configuration after cloning packer.nvim
