@@ -8,7 +8,7 @@ local formatting = null_ls.builtins.formatting
 -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics
 local diagnostics = null_ls.builtins.diagnostics
 
-null_ls.setup({
+null_ls.setup({ --all the lsp were installed locally via npm
   debug = false,
   sources = { --check :NullLsInfo on a language to see what lsp you can use
     formatting.prettier.with({ extra_args = { "--single-quote", "--jsx-single-quote" } }),
@@ -17,5 +17,7 @@ null_ls.setup({
     diagnostics.eslint,
     diagnostics.alex, --for mdown
     diagnostics.tidy,
+    diagnostics.cspell,
+    --diagnostics.codespell --codespell dont work
   },
 })
