@@ -79,17 +79,17 @@ local opts = {
 }
 
 local mappings = {
-  ["a"] = { "<cmd>Alpha<cr>", "Alpha" },
+  -- ["a"] = { "<cmd>Alpha<cr>", "Alpha" },
   ["b"] = {
     "<cmd>lua require('telescope.builtin').buffers(require('telescope.themes').get_dropdown{previewer = false})<cr>",
     "Buffers",
   },
   ["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
   ["r"] = { "<cmd>NvimTreeFocus<cr>", "ExplorerFocus" },
-  ["w"] = { "<cmd>w!<CR>", "Save" },
-  ["q"] = { "<cmd>q!<CR>", "Quit" },
-  ["c"] = { "<cmd>Bdelete!<CR>", "Close Buffer" },
-  ["h"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
+  ["w"] = { "<cmd>w!<CR>", "Save" }, -- space w to save
+  ["q"] = { "<cmd>q!<CR>", "Quit" }, -- space q to quit
+  ["c"] = { "<cmd>Bdelete!<CR>", "Close Buffer" }, -- space c to close buffer
+  ["h"] = { "<cmd>nohlsearch<CR>", "No Highlight" }, -- space h remove search highlight
   ["f"] = {
     "<cmd>lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown{previewer = false})<cr>",
     "Find files",
