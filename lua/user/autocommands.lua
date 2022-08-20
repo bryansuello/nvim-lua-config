@@ -36,8 +36,6 @@ vim.cmd([[
 augroup end
   colorscheme gruvbox
 
-  
-
  augroup _lsp
    autocmd!
    autocmd BufWritePre * lua vim.lsp.buf.formatting()

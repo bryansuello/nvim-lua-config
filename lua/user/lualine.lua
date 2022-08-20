@@ -66,11 +66,17 @@ lualine.setup({
   options = {
     icons_enabled = true,
     theme = "iceberg_dark", --other options: material, gruvbox-material, gruvbox_dark, nightfly, nord, onedark
-    component_separators = { left = "", right = "" },
-    section_separators = { left = "", right = "" },
+    component_separators = { left = "", right = "" }, 
+    section_separators = { left = "", right = "" },
     disabled_filetypes = { "alpha", "dashboard", "NvimTree", "Outline" },
     always_divide_middle = true,
   },
+
+-- unicode
+-- { left = "", right = "" },
+-- { left = "", right = "" }, 
+-- '👽'
+
   sections = {
     lualine_a = { mode },
     lualine_b = { branch, diagnostics },
