@@ -5,7 +5,7 @@ end
 
 local lspconfig = require("lspconfig")
 
-local servers = { "jsonls", "sumneko_lua", "cssls", "intelephense", "marksman", "html", "tsserver" }
+local servers = { "jsonls", "sumneko_lua", "cssls", "intelephense", "marksman", "tsserver" } --adding html tiggers choice of formatter
 
 lsp_installer.setup({
   ensure_installed = servers,
