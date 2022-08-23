@@ -2,13 +2,15 @@
 - for linting and formatting to work.
 - configure .eslintrc.json
 
-
 #### todo comments:
+
 <!-- TODO: -->
 <!-- FIX: -->
 <!-- WARN: -->
 <!-- NOTE: -->
-* don't use
-<!-- PERF: -->
-<!-- HACK: -->
 
+- don't use
+  <!-- PERF: -->
+  <!-- HACK: -->
+
+- alex lsp giving the weird suggestions writing mds.
