@@ -2,6 +2,14 @@
 - for linting and formatting to work.
 - configure .eslintrc.json
 
+  formatting.prettier - npm
+  formatting.stylua npm
+  diagnostics.eslint - npm
+  diagnostics.alex -npm or zypper?
+  diagnostics.cspell - npm
+  diagnostics.tidy - zypper
+  stylelint?
+
 #### todo comments:
 
 <!-- TODO: -->
@@ -13,4 +21,4 @@
   <!-- PERF: -->
   <!-- HACK: -->
 
-- alex lsp giving the weird suggestions writing mds.
+- alex lsp w the suggestions writing mds.
