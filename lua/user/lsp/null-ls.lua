@@ -17,6 +17,6 @@ null_ls.setup({ --all lsp must be installed locally via npm or local package man
     diagnostics.eslint,
     --diagnostics.alex, --for mdown
     diagnostics.tidy, -- for html
-    --diagnostics.cspell, --disable when not needed, wild. or configure config in ~ for certain dirs or files
+    --diagnostics.cspell, --disable for certain files. config in ~.
   },
 })

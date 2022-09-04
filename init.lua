@@ -25,7 +25,7 @@ require("gruvbox").setup({
   undercurl = true,
   underline = true,
   bold = true,
-  italic = true,
+  italic = false, --  a combo of italics and ligatures make things unreadable
   strikethrough = true,
   invert_selection = false,
   invert_signs = false,
