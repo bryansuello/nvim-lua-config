@@ -139,6 +139,8 @@ return packer.startup(function(use)
     end
   }
 
+  use 'wakatime/vim-wakatime'
+
   -- own plugs end
 
   -- Automatically set up your configuration after cloning packer.nvim

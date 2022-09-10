@@ -30,11 +30,11 @@ vim.cmd([[
   " augroup end
 
   " set background transparent
-"   augroup _colorscheme 
-"     autocmd!
-"     autocmd ColorScheme * highlight Normal ctermbg=NONE guibg=NONE
-" augroup end
-"   colorscheme gruvbox
+  augroup _colorscheme
+    autocmd!
+    autocmd ColorScheme * highlight Normal ctermbg=NONE guibg=NONE
+augroup end
+  colorscheme gruvbox
 
  augroup _lsp
    autocmd!
