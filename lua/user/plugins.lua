@@ -93,6 +93,7 @@ return packer.startup(function(use)
 
   -- own plugs
   use({ "ellisonleao/gruvbox.nvim" }) --gruvbox
+  use 'tanvirtin/monokai.nvim' --monokai
 
   use({ "aca/emmet-ls" })
 
