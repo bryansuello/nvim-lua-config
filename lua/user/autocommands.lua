@@ -34,7 +34,7 @@ vim.cmd([[
     autocmd!
     autocmd ColorScheme * highlight Normal ctermbg=NONE guibg=NONE
 augroup end
-  colorscheme monokai  "gruvbox or monokai
+  colorscheme gruvbox  "gruvbox or monokai
 
  augroup _lsp
    autocmd!

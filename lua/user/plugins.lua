@@ -93,14 +93,22 @@ return packer.startup(function(use)
 
   -- own plugs
   use({ "ellisonleao/gruvbox.nvim" }) --gruvbox
-  use 'tanvirtin/monokai.nvim' --monokai
 
   use({ "aca/emmet-ls" })
 
   use({ "norcalli/nvim-colorizer.lua" }) --css colorizer
   require 'colorizer'.setup {
     '*'; -- Highlight all files, but customize some others.
-    css = { rgb_fn = true; }; -- Enable parsing rgb(...) functions in css.
+    css = {
+      rgb_fn   = true;
+      RGB      = true; -- #RGB hex codes
+      RRGGBB   = true; -- #RRGGBB hex codes
+      names    = true; -- "Name" codes like Blue
+      RRGGBBAA = true; -- #RRGGBBAA hex codes
+      hsl_fn   = true; -- CSS hsl() and hsla() functions
+      css      = true; -- Enable all CSS features: rgb_fn, hsl_fn, names, RGB, RRGGBB
+      css_fn   = true; -- Enable all CSS *functions*: rgb_fn, hsl_fn
+    }; -- Enable parsing rgb(...) functions in css.
     html = { names = true; } -- Disable parsing "names" like Blue or Gray
   }
 
