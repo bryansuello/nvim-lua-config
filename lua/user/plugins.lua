@@ -150,6 +150,17 @@ return packer.startup(function(use)
 
   use 'wakatime/vim-wakatime'
 
+  use { '0x100101/lab.nvim', run = 'cd js && npm ci', requires = { 'nvim-lua/plenary.nvim' } }
+  require('lab').setup {
+    code_runner = {
+      enabled = true,
+    },
+    quick_data = {
+      enabled = true,
+    }
+  }
+
+
   -- own plugs end
 
   -- Automatically set up your configuration after cloning packer.nvim

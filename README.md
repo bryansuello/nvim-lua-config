@@ -24,5 +24,3 @@
   <!-- HACK: -->
 
 - alex lsp w the suggestions writing mds.
-
-##### theme: monokai(tested everything, this is the best for your eyes)
