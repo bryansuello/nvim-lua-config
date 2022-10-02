@@ -1,6 +1,6 @@
 <img src="readme-image.png" >
 
-- make sure you have eslint and perttier installed locally via npm. <code>npm i -g</code>
+- make sure you have eslint and perttier installed locally via npm.
 - for linting and formatting to work.
 - configure .eslintrc.json
 
