@@ -40,6 +40,15 @@ augroup end
    autocmd!
    autocmd BufWritePre * lua vim.lsp.buf.formatting()
  augroup end
+
+
+  "rainbow parentheses
+augroup rainbow_lisp
+  autocmd!
+  autocmd FileType lisp,clojure,scheme RainbowParentheses
+augroup END
+
+
 ]])
 
 -- Autoformat on save

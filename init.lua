@@ -26,6 +26,7 @@ require("gruvbox").setup({
   underline = true,
   bold = true,
   italic = true, --  a combo of italics and ligatures make things unreadable
+  italic_comments = true,
   strikethrough = true,
   invert_selection = false,
   invert_signs = false,
@@ -55,3 +56,53 @@ vim.cmd("colorscheme gruvbox")
 --   --   overrides = {},
 -- })
 -- vim.cmd("colorscheme monokai")
+
+
+
+
+
+-- --vscode theme --some suggestions from repo
+-- require('vscode').setup({
+--   -- Enable transparent background
+--
+--   -- Enable italic comment
+--
+--
+--   -- Override colors (see ./lua/vscode/colors.lua)
+--   color_overrides = {
+--     vscLineNumber = '#FFFFFF',
+--   },
+--
+--   -- Override highlight groups (see ./lua/vscode/theme.lua)
+--   group_overrides = {
+--     -- this supports the same val table as vim.api.nvim_set_hl
+--     -- use colors from this colorscheme by requiring vscode.colors!
+--     Cursor = { fg = c.vscDarkBlue, bg = c.vscLightGreen, bold = true },
+--   }
+-- })
+
+
+
+
+-- require("vscode").setup({
+--   transparent = true,
+--   italic_comments = true,
+--   undercurl = true,
+--   underline = true,
+--   bold = true,
+--   italic = true, --  a combo of italics and ligatures make things unreadable
+--   strikethrough = true,
+--   --   -- Disable nvim-tree background color
+--   disable_nvimtree_bg = true,
+--   --   invert_selection = false,
+--   --   invert_signs = false,
+--   --   invert_tabline = false,
+--   --   invert_intend_guides = false,
+--   --   inverse = true, -- invert background for search, diffs, statuslines and errors
+--   --   contrast = "", -- can be "hard", "soft" or empty string
+--   --   overrides = {},
+--   -- color_overrides = {
+--   --   vscLineNumber = '#FFFFFF',
+--   -- },
+-- })
+-- vim.cmd("colorscheme vscode")

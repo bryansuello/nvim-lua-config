@@ -139,8 +139,8 @@ return packer.startup(function(use)
         -- your configuration comes here
         -- or leave it empty to use the default settings
         -- refer to the configuration section below
-        -- TODO
-        -- HACK
+        -- TODO:
+        -- HACK:
         -- WARN
         -- PERF
         -- NOTE
@@ -158,6 +158,11 @@ return packer.startup(function(use)
     }
   }
 
+  --vs code theme extensions
+  use 'Mofiqul/vscode.nvim'
+
+
+  use 'junegunn/rainbow_parentheses.vim'
 
   -- own plugs end
 
