@@ -148,9 +148,7 @@ return packer.startup(function(use)
     end
   }
 
-  use 'wakatime/vim-wakatime'
-
-  use { '0x100101/lab.nvim', run = 'cd js && npm ci', requires = { 'nvim-lua/plenary.nvim' } }
+  use { '0x100101/lab.nvim', run = 'cd js && npm ci' }
   require('lab').setup {
     code_runner = {
       enabled = true,

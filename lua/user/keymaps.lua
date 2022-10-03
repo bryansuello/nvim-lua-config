@@ -79,3 +79,5 @@ vim.api.nvim_set_keymap('', '8',
 vim.api.nvim_set_keymap('', '9',
   "<cmd>lua require'hop'.hint_char1({ direction = require'hop.hint'.HintDirection.BEFORE_CURSOR, current_line_only = true })<cr>"
   , {})
+
+
